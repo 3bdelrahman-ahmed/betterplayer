@@ -49,10 +49,10 @@ class SchemeData {
   }
 
   @override
-  int get hashCode => hashValues(
+  int get hashCode => Object.hashAll([
       /*uuid, */
       licenseServerUrl,
       mimeType,
       data,
-      requiresSecureDecryption);
+      requiresSecureDecryption]);
 }
